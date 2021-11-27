@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://RehanRabbani.github.io/demo-task-one",
+  "homepage": "http://rehanrabbani.github.io/demo-task-one",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.15.1",
