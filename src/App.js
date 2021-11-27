@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "antd/dist/antd.css";
+import { Card } from "antd";
+import NormalLoginForm from "./components/NormalLoginForm";
+import DescriptionSection from "./components/DescriotionSection";
+import { RightCircleFilled } from "@ant-design/icons";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="parent">
+      <section className="section-one">
+        <div className="heading">
+          <h1>global</h1>
+          <p>control center</p>
+        </div>
+        <Card
+          title={
+            <div>
+              <h1 className="title">Welcome</h1>
+              <p className="sub-title">
+                Please login to your account to continue
+              </p>
+            </div>
+          }
+          className="card"
+          style={{ width: 500 }}
         >
-          Learn React
-        </a>
-      </header>
+          <NormalLoginForm />
+          <RightCircleFilled className="right-arrow-icon" />
+        </Card>
+      </section>
+      <section className="section-two">
+        <DescriptionSection />
+      </section>
     </div>
   );
-}
+};
 
 export default App;
